@@ -1,0 +1,7 @@
+query getPokemonMaxHP($name: String!) {
+  pokemon(name: $name) {
+    id
+    name
+    maxHP
+  }
+}

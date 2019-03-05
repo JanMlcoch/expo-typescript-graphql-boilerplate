@@ -1,0 +1,24 @@
+{
+  "extends": [
+    "tslint-eslint-rules",
+    "tslint-config-airbnb",
+    "tslint-react"
+  ],
+  "rules": {
+    "no-constant-condition": true,
+    "semicolon": [true, "always", "strict-bound-class-methods"],
+    "object-curly-spacing": [false, "error", "always"],
+    "deprecation": true,
+    "no-any": true,
+    "ban-types": [true, ["Function", "Use more specific type, like () => void"]],
+    "no-empty": true,
+    "no-this-assignment": [true, {"allow-destructuring": true}],
+    "import-name": [true, {"react": "React", "graphqlTag": "gql", "graphql": "client"}],
+    "variable-name": [true, "ban-keywords", "check-format", "allow-pascal-case", "allow-leading-underscore", "allow-trailing-underscore"],
+    "max-line-length": [true, {"limit": 100, "ignore-pattern": "^import "}],
+    "jsx-no-lambda": {"options": true, "severity": "warning"},
+    "no-increment-decrement": false,
+    "jsx-boolean-value": false,
+    "prefer-array-literal": false
+  }
+}
